@@ -127,9 +127,9 @@ LLM_CONFIG = {
     
     # 字节跳动Doubao配置（有免费额度）
     'doubao': {
-        'api_key': os.getenv('ARK_API_KEY', '5ec2acc9-c32b-4a7e-a135-21640c83dc21'),
-        'api_base': 'https://ark.cn-beijing.volces.com/api/v3/chat/completions',
-        'model': 'ep-20260331103615-8nx9g',  # 用户提供的模型ID
+        'api_key': os.getenv('ARK_API_KEY', ''),
+        'api_base': '',
+        'model': '',  # 用户提供的模型ID
         'temperature': 0.7,
         'max_tokens': 2000,
     },
