@@ -304,13 +304,13 @@ class OllamaClient(BaseLLMClient):
 class DoubaoClient(BaseLLMClient):
     """字节跳动Doubao客户端（有免费额度）"""
     
-    def __init__(self, api_key: str, model: str = "ep-20260331103615-8nx9g",
+    def __init__(self, api_key: str, model: str = "",
                  temperature: float = 0.7, max_tokens: int = 2000, **kwargs):
         self.api_key = api_key
         self.model = model
         self.temperature = temperature
         self.max_tokens = max_tokens
-        self.api_base = "https://ark.cn-beijing.volces.com/api/v3/responses"
+        self.api_base = ""
     
     def chat(self, prompt: str, **kwargs) -> str:
         """单次对话"""
